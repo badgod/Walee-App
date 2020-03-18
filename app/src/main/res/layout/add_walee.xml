@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/addWaleeTextView"
+        android:layout_width="160dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/kanit_light"
+        android:text="@string/add_quote"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editQuote"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/kanit_light"
+        android:ellipsize="none"
+        android:maxLines="5"
+        android:hint="@string/quote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addWaleeTextView" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editArticle"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/kanit_light"
+        android:hint="@string/article"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editQuote" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editSource"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/kanit_light"
+        android:hint="@string/source"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editArticle" />
+
+    <Button
+        android:id="@+id/btnSaveWalee"
+        android:layout_width="358dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/kanit_bold"
+        android:text="@string/btnAddWalee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSource"
+        app:layout_constraintVertical_bias="0.111"
+        android:textAllCaps="true"
+        android:textColor="#0083B0"
+        android:background="@drawable/custom_btn_gg"/>
+
+</android.support.constraint.ConstraintLayout>
