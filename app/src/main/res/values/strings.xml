@@ -1,18 +1,18 @@
 <resources>
-    <string name="app_name">Final_Walee</string>
+    <string name="app_name">Three Kingdoms Character</string>
     <string name="todo">TODO</string>
-    <string name="add_quote">Add Quote</string>
-    <string name="quote">Quote</string>
-    <string name="btnAddWalee">Add Quote</string>
-    <string name="article">Article</string>
-    <string name="source">Source</string>
-    <string name="rai_kor_ruk">ร้ายก็รัก</string>
-    <string name="oat">👦: OAT</string>
-    <string name="source2">🌐: FB</string>
-    <string name="edit_walee">Edit Walee</string>
-    <string name="id">id</string>
+    <string name="add_quote">Add Character</string>
+    <string name="quote">Name</string>
+    <string name="btnAddWalee">Add Character</string>
+    <string name="article">Position</string>
+    <string name="source">Faction</string>
+    <string name="rai_kor_ruk">เล่าปี่</string>
+    <string name="oat">👦: นักปราชญ์</string>
+    <string name="source2">🌐: จ๊กก๊ก</string>
+    <string name="edit_walee">Edit Character</string>
+    <string name="id">ID</string>
     <string name="save">Save</string>
     <string name="delete">Delete</string>
     <string name="ql">QL</string>
-    <string name="random">Random</string>
+    <string name="random">Random Character</string>
 </resources>

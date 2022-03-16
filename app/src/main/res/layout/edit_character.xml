@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/addWaleeTextView"
+        android:layout_width="250dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/kanit"
+        android:text="@string/edit_walee"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/idEditText"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:enabled="false"
+        android:fontFamily="@font/kanit_light"
+        android:hint="@string/id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addWaleeTextView" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editQuote"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ellipsize="none"
+        android:fontFamily="@font/kanit_light"
+        android:hint="@string/quote"
+        android:maxLines="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEditText" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editArticle"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/kanit_light"
+        android:hint="@string/article"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editQuote" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editSource"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/kanit_light"
+        android:hint="@string/source"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editArticle" />
+
+    <Button
+        android:id="@+id/btnSaveCharacter"
+        android:layout_width="358dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/kanit"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSource"
+        app:layout_constraintVertical_bias="0.139"
+        android:textAllCaps="true"
+        android:textColor="#0083B0"
+        android:background="@drawable/custom_btn_gg"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/deleteButton"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSaveCharacter" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="358dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/kanit"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.642"
+        android:textAllCaps="true"
+        android:textColor="#ff5e62"
+        android:background="@drawable/custom_btn_dis"/>
+</android.support.constraint.ConstraintLayout>

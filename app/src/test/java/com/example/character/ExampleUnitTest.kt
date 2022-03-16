@@ -1,4 +1,4 @@
-package com.example.cinema
+package com.example.character
 
 import org.junit.Test
 
